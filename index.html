@@ -187,9 +187,9 @@ h1,h2,h3,h4,p{margin:0}
 .header{padding-top:env(safe-area-inset-top)}
 .header .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .brand{display:flex;align-items:center;gap:12px;min-height:44px}
-.brand-mark{width:34px;height:34px;flex:none;position:relative;overflow:hidden;background:#000}
+.brand-mark{width:36px;height:36px;flex:none;position:relative;overflow:hidden;background:#000;border-radius:50%}
 .brand-mark img{width:100%;height:100%;object-fit:cover;transform:scale(1.02)}
-.brand-mark::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(201,204,210,.35)}
+.brand-mark::after{content:"";position:absolute;inset:0;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(201,204,210,.35)}
 .brand-name{font-family:var(--display);font-size:22px;letter-spacing:.06em;line-height:1;white-space:nowrap}
 .brand-badge{
   font-family:var(--mono);font-size:9px;letter-spacing:.22em;
