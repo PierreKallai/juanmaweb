@@ -671,7 +671,7 @@ h1,h2,h3,h4,p{margin:0}
 .jr-bk-close:active{transform:scale(.94)}
 .jr-bk-close svg{width:16px;height:16px;stroke:currentColor;stroke-width:2;fill:none}
 .jr-bk-close span{position:absolute;right:56px;top:50%;transform:translateY(-50%);white-space:nowrap;font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);background:rgba(8,8,8,.85);padding:8px 10px;border:1px solid var(--line-2)}
-body.jr-bk-open{overflow:hidden}
+
 /* Restyle Booksy's injected button so it matches the site */
 #booksyWidget .booksy-widget-container{position:static!important;margin:0!important;width:100%!important;max-width:none!important;display:grid!important;gap:6px}
 #booksyWidget .booksy-widget-button{
@@ -1819,7 +1819,7 @@ const Player = (() => {
   };
   const onDialog = dialog => {
     if ($(".jr-bk-close")) return;
-    document.body.classList.add("jr-bk-open");
+    document.body.classList.add("jr-bk-open"); document.body.style.overflow = "";
     const btn = document.createElement("button");
     btn.type = "button"; btn.className = "jr-bk-close"; btn.setAttribute("aria-label", "Cerrar reservas");
     btn.innerHTML = '<span>Cerrar</span><svg viewBox="0 0 16 16"><path d="M3 3l10 10M13 3L3 13"/></svg>';
